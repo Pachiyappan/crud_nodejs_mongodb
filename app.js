@@ -7,7 +7,7 @@ const app = express();
 // Set up mongoose connection
 const mongoose = require("mongoose");
 let dev_db_url =
-  "mongodb://pachi:lkjhgfdsad12..@ds117495.mlab.com:17495/product_db";
+  "mongodb://<username>:<password>@ds117495.mlab.com:17495/product_db";
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
